@@ -1,0 +1,21 @@
+// Author: Sanjeev Beekeeper
+// 00 mm yyyy
+// debug.scss
+
+$profiles: (
+    'red':       #ff052b,
+    'green':     #00ff00,
+    'blue':      #0000ff,
+    'yellow':    #ffff00,
+    'orange':    #ff7f00,
+    'pink':      #ff03d5,
+    'white':     #ffffff,
+    'black':     #030303,
+    'purple':    #2c03fa
+    );
+
+@each $profile, $bgcolor in $profiles {
+    .#{$profile} {
+        border: 1px solid $bgcolor;
+        }
+    }

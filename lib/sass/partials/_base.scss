@@ -1,0 +1,33 @@
+// Author: Sanjeev Beekeeper
+// 11 mar 2017
+// base.scss
+
+a {
+    text-decoration: none !important;
+    }
+
+// base settings
+html {
+    height: 100%;
+    box-sizing: border-box;
+    }
+
+body {
+    background-color: $bodybg;
+    font-family: $primaryfont;
+    font-size: fontsize(16);
+    @include lineheight();
+    position: relative;
+    margin: 0;
+    padding-bottom: 15rem;
+    min-height: 100%;
+    }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    }
+
+.minheight {
+    margin: 0 auto;
+    margin-top: 0;
+    }

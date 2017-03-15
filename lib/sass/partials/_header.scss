@@ -1,0 +1,15 @@
+// Author: Sanjeev Beekeeper
+// 11 mar 2017
+// header.scss
+
+header {
+    // heading
+    h2 {
+        @include fontweight(bold);
+        }
+    // description
+    p {
+        font-style: italic;
+        color: gray;
+        }
+    }

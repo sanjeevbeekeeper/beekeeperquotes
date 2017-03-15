@@ -1,0 +1,15 @@
+// Author: Sanjeev Beekeeper
+// 11 mar 2017
+// bootstrap-reset.scss
+
+// Gutter
+.nogutter {
+    margin-left: -15px;
+    margin-right: -15px;
+    &_left {
+        margin-left: -15px;
+        }
+    &_left {
+        margin-right: -15px;
+        }
+    }

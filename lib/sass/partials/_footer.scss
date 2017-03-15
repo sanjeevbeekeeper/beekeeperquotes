@@ -1,0 +1,39 @@
+// Author: Sanjeev Beekeeper
+// 11 mar 2017
+// footer.scss
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    padding: 1rem;
+    color: $footercolor;
+    font-size: fontsize(20);
+    clear:both;
+    text-align: center;
+    width: 100%;
+    .footer {
+        &_blogtitle {
+            color: lighten($footercolor, 20%);
+            display: inline-block;
+            font-size: fontsize(20);
+            margin-bottom: 3px;
+            }
+        &_browsebyauthor {
+            font-size: fontsize(18);
+            span {
+                font-size: fontsize(18);
+                // &:after {
+                //     content: ' | ';
+                //     }
+                }
+            }
+        &_copyright {
+            margin-top: 10px;
+            .nowrap {
+                white-space: nowrap;
+                }
+            }
+        } // .footer
+    } // footer

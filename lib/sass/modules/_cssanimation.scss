@@ -1,0 +1,12 @@
+// Author: Sanjeev Beekeeper
+// 11 mar 2017
+// cssanimations.scss
+
+// opacity
+@mixin opacity($new, $old){
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$old})"; // for IE 8 & 9
+    filter: alpha(opacity=$old); // IE 9, 8, 7, 6, 5
+    -moz-opacity:$new; // Older than Firefox 0.9
+    -khtml-opacity: $new; // Safari 1.x (pre WebKit!)
+    opacity: $new; // Modern browsers
+    };

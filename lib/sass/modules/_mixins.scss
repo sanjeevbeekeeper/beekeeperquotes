@@ -1,0 +1,8 @@
+// Author: Sanjeev Beekeeper
+// 11 mar 2017
+// mixin.scss
+
+// lineheight
+@mixin lineheight($val:1.2){
+	line-height: #{$val};
+    }

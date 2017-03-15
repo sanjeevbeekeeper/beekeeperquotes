@@ -1,0 +1,17 @@
+// Author: Sanjeev Beekeeper
+// 11 mar 2017
+// fonts.scss
+
+// Provider: Google font
+// link: https://fonts.google.com/specimen/Lora
+// @import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Roboto');
+// FONT
+@mixin fontweight($ff) {
+    @if $ff == 'regular' {
+        font-weight: 400;
+        }
+    @elseif $ff == 'bold' {
+        font-weight: 700;
+        }
+    }

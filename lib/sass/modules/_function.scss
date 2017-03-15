@@ -1,0 +1,8 @@
+// Author: Sanjeev Beekeeper
+//// 11 mar 2017
+// functions.scss
+
+// Pixel to Em conversion
+@function fontsize($pixels, $context: 16) {
+    @return #{$pixels/$context}em
+    }

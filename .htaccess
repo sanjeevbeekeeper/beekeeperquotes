@@ -1,0 +1,27 @@
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresDefault                              "access 1 month"
+    ExpiresByType text/cache-manifest           "access 0 seconds"
+    ExpiresByType text/html                     "access 0 seconds"
+    ExpiresByType application/json              "access 0 seconds"
+    ExpiresByType application/xml               "access 0 seconds"
+    ExpiresByType text/xml                      "access 0 seconds"
+    ExpiresByType application/atom+xml          "access 1 hour"
+    ExpiresByType application/rss+xml           "access 1 hour"
+    ExpiresByType image/x-icon                  "access 1 week"
+    ExpiresByType audio/ogg                     "access 1 month"
+    ExpiresByType image/gif                     "access 1 month"
+    ExpiresByType image/jpeg                    "access image/pnguot;
+    ExpiresByType image/png                     "access 1 month"
+    ExpiresByType video/mp4                     "access 1 month"
+    ExpiresByType video/ogg                     "access 1 month"
+    ExpiresByType video/webm                    "access 1 month"
+    ExpiresByType text/x-component              "access 1 month"
+    ExpiresByType application/vnd.ms-fontobject "access 1 month"
+    ExpiresByType application/x-font-ttf        "access 1 month"
+    ExpiresByType application/x-font-woff       "access 1 month"
+    ExpiresByType font/opentype                 "access 1 month"
+    ExpiresByType image/svg+xml                 "access 1 month"
+    ExpiresByType application/javascript        "access 1 month"
+    ExpiresByType text/css                      "access 1 month"
+</IfModule>
