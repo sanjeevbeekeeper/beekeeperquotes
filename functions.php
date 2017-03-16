@@ -3,27 +3,10 @@
 /* =================================================
 	Base Scripts and Styles
 ==================================================== */
-function beekeeperstudio_base() {
+function beekeeperquotes_base() {
 
 	// ===== Deregister WordPress Default jQuery Script and Add custom jQuery in the footer
 	wp_deregister_script( 'jquery' );
-	wp_register_script(
-		'jquery',
-		'https://code.jquery.com/jquery-3.1.1.min.js',
-		false,
-		'3.1.1',
-		true  // show in footer
-		);
-	wp_enqueue_script('jquery');
-
-	// ===== BOOTSTRAP JS
-	wp_enqueue_script(
-		'bootstrap',
-		'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',
-		array('jquery'),
-		'3.3.7',
-		true  // show in footer
-		);
 
 	// ===== BOOTSTRAP CSS
 	wp_enqueue_style (
@@ -43,4 +26,30 @@ function beekeeperstudio_base() {
 		'all'
 		);
 	}
-add_action( 'wp_enqueue_scripts', 'beekeeperstudio_base' );
+add_action( 'wp_enqueue_scripts', 'beekeeperquotes_base' );
+
+
+// remove the default wordpress versions from the front-end
+function quotes_remove_wpversion_strings($src){
+	// calling the global variable
+	global $wp_version;
+	// check the src PHP_URL_QUERY and replace with $query
+	// PHP_URL_QUERY is : &ver=
+	parse_str(parse_url($src, PHP_URL_QUERY), $query);
+	// if the $query is identitical to the $wp_version
+	if( !empty( $query['ver'] ) && $query['ver'] === $wp_version ) {
+		// remove it
+		$src = remove_query_arg( 'ver', $src );
+		}
+	return $src;
+	}
+add_filter('script_loader_src', 'quotes_remove_wpversion_strings');
+add_filter('style_loader_src', 'quotes_remove_wpversion_strings');
+
+// ----- //
+
+// Remove metatag 'generator' from the header
+function quotes_remove_metaversion(){
+	return '';
+	}
+add_filter('the_generator', 'quotes_remove_metaversion');
