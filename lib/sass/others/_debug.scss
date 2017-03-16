@@ -15,7 +15,7 @@ $profiles: (
     );
 
 @each $profile, $bgcolor in $profiles {
-    .#{$profile} {
+    .debug_#{$profile} {
         border: 1px solid $bgcolor;
         }
     }
