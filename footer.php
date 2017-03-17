@@ -15,7 +15,7 @@
             </div>
 
             <div class="footer_copyright">
-                2005 - <?php echo date('Y'); ?> &copy; <?php bloginfo('name'); ?>. <span class="nowrap">Created by <a href="http://sanjeevbeekeeper.com" target="_blank">Sanjeev Beekeeper</a></span>
+                2011 - <?php echo date('Y'); ?> &copy; <?php bloginfo('name'); ?>. <span class="nowrap">Created by <a href="http://sanjeevbeekeeper.com" target="_blank">Sanjeev Beekeeper</a></span>
             </div>
         </footer>
     </div>
