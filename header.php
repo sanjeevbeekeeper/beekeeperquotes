@@ -10,16 +10,5 @@
     </head>
 <body <?php body_class(); ?>>
 
-    <!-- ########## -->
-    <!-- ONLY FOR REFERENCE -->
-    <div class="responsive_help">
-        <div class="visible-lg">LG</div>
-        <div class="visible-md">MD</div>
-        <div class="visible-sm">SM</div>
-        <div class="visible-xs">XS</div>
-    </div>
-    <!-- ONLY FOR REFERENCE -->
-    <!-- ########## -->
-
         <!-- content wrapping -->
         <div class="container minheight">
