@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 <!-- header -->
 
-<!-- header -->
+<!-- google analytics -->
+<?php include_once("analyticstracking.php") ?>
+
 <!-- Loop start -->
     <?php
         $col1 = array(
@@ -25,7 +27,7 @@
                 </div> <!-- // .quotes_container -->
             </div> <!-- // .col -->
         </div>
-        
+
         <?php
         endwhile; ?>
         <?php endif; ?>
