@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 <!-- header -->
 
+<!-- google analytics -->
+<?php include_once("analyticstracking.php") ?>
+
 <div class="quotes_container">
 
     <div class="error_container text-center">
