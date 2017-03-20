@@ -10,7 +10,10 @@
 
             <!-- Total no of Quotes -->
             <div class="footer_browsebyauthor">
-                <span>50 Quotes</span>
+                <?php
+                $totalquotes = esc_attr( get_option('total_quotes') );
+                 ?>
+                <span><?php echo $totalquotes; ?></span>
                 <!-- <a href="#">Browse by Author</a> -->
             </div>
 
