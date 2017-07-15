@@ -4,7 +4,7 @@
 
 .quotes_container {
     font-family: $secondaryfont;
-    margin-top: 50px;
+    // margin-top: 10px;
     &_cat {
         margin-top: 10px;
         } // &_cat
@@ -46,7 +46,7 @@
         padding-bottom: 8px;
         line-height: 20px;
         // hover animation
-        background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, $hoverslide 50%);
+        background-image: linear-gradient(to right, rgba(255,255,255,0) 50.1%, $hoverslide 50%);
         background-position: -0% 0;
         background-size: 200% auto;
         transition-property: background-position;
