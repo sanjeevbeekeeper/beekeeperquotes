@@ -11,7 +11,7 @@ function beekeeperquotes_base() {
 	// ===== BOOTSTRAP CSS
 	wp_enqueue_style (
 		'bootstrap',
-		'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
+		get_stylesheet_directory_uri() . '/lib/vendor/bootstrap/bootstrap.min.css',
 		array(),
 		'3.3.7',
 		'all'
