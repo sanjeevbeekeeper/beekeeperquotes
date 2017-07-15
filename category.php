@@ -3,9 +3,8 @@
 
     <!-- Category author name -->
     <div class="row">
-        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-
-            <h1 class="category_authorname text-center">
+        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+            <h1 class="category_authorname">
                 <?php
                     // category
                     if ( is_category() ) {
@@ -38,8 +37,6 @@
 
     </div> <!-- // .col -->
 </div>
-
-
 
 <!-- footer -->
 <?php get_footer(); ?>
