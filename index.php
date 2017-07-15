@@ -18,7 +18,7 @@
         while ($var_wp->have_posts()) : $var_wp->the_post(); ?>
 
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
                 <div class="quotes_container">
 
                     <!-- See the content.php -->
