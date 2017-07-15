@@ -4,15 +4,15 @@
 
 // Category
 .category_authorname {
-    span {
-        color: $body;
-        }
     border-bottom: 1px solid $separator;
     padding-bottom: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: fontsize(40);
     font-family: $secondaryfont;
     color: $category;
+    span {
+        color: $body;
+        }
     .quotes_container {
         p {
             font-size: fontsize(40);
@@ -20,3 +20,9 @@
             }
         } // .quotes_container
     } // .category_authorname
+
+.category_browse-by-author {
+    @media screen and (max-width: 480px) {
+        text-align: center;
+          }
+}
