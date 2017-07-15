@@ -4,9 +4,9 @@
         <footer>
 
             <!-- title -->
-            <div class="footer_blogtitle">
-                <a href="<?php echo home_url(); ?>"> <?php bloginfo('name'); ?> </a>
-            </div>
+            <!-- <div class="footer_blogtitle"> -->
+                <!-- <a href="<?php echo home_url(); ?>"> <?php bloginfo('name'); ?> </a> -->
+            <!-- </div> -->
 
             <!-- Total no of Quotes -->
             <div class="footer_browsebyauthor">
@@ -14,7 +14,19 @@
                 $totalquotes = esc_attr( get_option('total_quotes') );
                  ?>
                 <span><?php echo $totalquotes; ?></span>
-                <!-- <a href="#">Browse by Author</a> -->
+
+                <?php
+                    wp_nav_menu( array(
+                        'menu'              => 'secondary-menu',
+                        'theme_location'    => 'secondary',
+                        'depth'             => 2,
+                        'container'         => 'div',
+                        'menu_class'        => 'nav navbar-nav',
+                        'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                        'walker'            => new wp_bootstrap_navwalker())
+                    );
+                ?>
+
             </div>
 
             <div class="footer_copyright">
