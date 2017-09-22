@@ -3,7 +3,7 @@
 -->
 
 <!-- Page Heading -->
-<h1>Quotes Settings</h1>
+<h1>Quotes Count</h1>
 
 <!-- Notification Message -->
 <?php settings_errors(); ?>
