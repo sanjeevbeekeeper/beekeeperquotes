@@ -5,7 +5,7 @@
     // ===== ADD PAGE
     function setting_adminpage() {
         // PARENT 1/2
-        add_menu_page('settings Theme options', 'Quotes Settings', 'manage_options', 'setting_parent_slug', 'setting_parent_page_function', 'dashicons-format-quote', 6);
+        add_menu_page('settings Theme options', 'Quotes Count', 'manage_options', 'setting_parent_slug', 'setting_parent_page_function', 'dashicons-format-quote', 6);
 
         // PARENT 2/2:REPETITION
         // PAGE 01
